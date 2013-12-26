@@ -7,3 +7,10 @@ subdirs.pro
 tmp
 bin
 lib
+src/ivkapp/ivkapp.pro
+src/ivkapp/ui_base/ui_*.h
+src/ivktest/ivktest.pro
+src/libivknetwork/libivknetwork.pro
+src/rawfileparser/rawfileparser.pro
+src/libivk/libivk.pro
+src/librfp/librfp.pro
