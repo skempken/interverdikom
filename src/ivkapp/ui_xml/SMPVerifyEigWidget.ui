@@ -1,0 +1,84 @@
+<ui version="4.0" >
+ <class>SMPVerifyEigWidget</class>
+ <widget class="QWidget" name="SMPVerifyEigWidget" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>608</width>
+    <height>593</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" >
+   <item>
+    <spacer name="verticalSpacer" >
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0" >
+      <size>
+       <width>20</width>
+       <height>240</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_2" >
+     <property name="text" >
+      <string>(No parameters for this computation)</string>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_2" >
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0" >
+      <size>
+       <width>20</width>
+       <height>237</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout" >
+     <item row="0" column="0" >
+      <widget class="QProgressBar" name="progressBar" >
+       <property name="maximum" >
+        <number>1</number>
+       </property>
+       <property name="value" >
+        <number>0</number>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" >
+      <widget class="QLabel" name="label" >
+       <property name="text" >
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" >
+      <widget class="QPushButton" name="computeButton" >
+       <property name="text" >
+        <string>Perform coefficient precomputation</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

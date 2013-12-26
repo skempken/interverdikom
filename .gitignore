@@ -1,0 +1,9 @@
+build
+config.log
+config.status
+qmake-config.pro
+Makefile
+subdirs.pro
+tmp
+bin
+lib

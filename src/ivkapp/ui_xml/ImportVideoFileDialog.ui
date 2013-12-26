@@ -1,0 +1,167 @@
+<ui version="4.0" >
+ <class>ImportVideoFileDialog</class>
+ <widget class="QDialog" name="ImportVideoFileDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>428</width>
+    <height>250</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Import Video File</string>
+  </property>
+  <layout class="QVBoxLayout" >
+   <item>
+    <widget class="QGroupBox" name="groupBox" >
+     <property name="title" >
+      <string>File</string>
+     </property>
+     <layout class="QVBoxLayout" >
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <property name="leftMargin" >
+       <number>9</number>
+      </property>
+      <property name="topMargin" >
+       <number>9</number>
+      </property>
+      <property name="rightMargin" >
+       <number>9</number>
+      </property>
+      <property name="bottomMargin" >
+       <number>9</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" >
+        <property name="spacing" >
+         <number>6</number>
+        </property>
+        <property name="leftMargin" >
+         <number>0</number>
+        </property>
+        <property name="topMargin" >
+         <number>0</number>
+        </property>
+        <property name="rightMargin" >
+         <number>0</number>
+        </property>
+        <property name="bottomMargin" >
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLineEdit" name="pathEdit" />
+        </item>
+        <item>
+         <widget class="QPushButton" name="browseButton" >
+          <property name="text" >
+           <string>Browse...</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2" >
+     <property name="title" >
+      <string>Options</string>
+     </property>
+     <layout class="QVBoxLayout" >
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <property name="leftMargin" >
+       <number>9</number>
+      </property>
+      <property name="topMargin" >
+       <number>9</number>
+      </property>
+      <property name="rightMargin" >
+       <number>9</number>
+      </property>
+      <property name="bottomMargin" >
+       <number>9</number>
+      </property>
+      <item>
+       <widget class="QCheckBox" name="importVideoCheck" >
+        <property name="text" >
+         <string>Import video data</string>
+        </property>
+        <property name="checked" >
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="importAudioCheck" >
+        <property name="text" >
+         <string>Import audio data</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer>
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" >
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox" >
+     <property name="standardButtons" >
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::NoButton|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>ImportVideoFileDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>281</x>
+     <y>225</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>295</x>
+     <y>192</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>ImportVideoFileDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>388</x>
+     <y>225</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>398</x>
+     <y>192</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

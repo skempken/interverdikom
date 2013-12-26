@@ -1,0 +1,31 @@
+<ui version="4.0" >
+ <class>ArrivalProcessDisplay</class>
+ <widget class="QWidget" name="ArrivalProcessDisplay" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>778</width>
+    <height>593</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" >
+   <item>
+    <widget class="StochasticProcessWidget" native="1" name="widget" />
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>StochasticProcessWidget</class>
+   <extends>QWidget</extends>
+   <header>StochasticProcessWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

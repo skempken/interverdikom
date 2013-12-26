@@ -1,0 +1,458 @@
+<ui version="4.0" >
+ <class>GeneticFrameModelerWidget</class>
+ <widget class="QWidget" name="GeneticFrameModelerWidget" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>472</width>
+    <height>460</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" >
+   <item row="0" column="0" >
+    <widget class="QLabel" name="label" >
+     <property name="text" >
+      <string>Number of discretization steps</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" >
+    <widget class="QSlider" name="sliderDSteps" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3" >
+    <widget class="QSpinBox" name="numdstepsEdit" >
+     <property name="minimum" >
+      <number>1</number>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" >
+    <widget class="QLabel" name="label_2" >
+     <property name="text" >
+      <string>Number of states for discretization</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1" >
+    <widget class="QSlider" name="sliderStates" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3" >
+    <widget class="QSpinBox" name="numstatesEdit" >
+     <property name="minimum" >
+      <number>1</number>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" >
+    <widget class="QLabel" name="label_3" >
+     <property name="text" >
+      <string>Number of autocorrelation steps to consider</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1" >
+    <widget class="QSlider" name="sliderAutoc" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3" >
+    <widget class="QSpinBox" name="numautocEdit" >
+     <property name="minimum" >
+      <number>1</number>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" >
+    <widget class="QLabel" name="label_4" >
+     <property name="text" >
+      <string>Number of iterations</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1" >
+    <widget class="QSlider" name="sliderIterations" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="3" >
+    <widget class="QSpinBox" name="numiterationsEdit" >
+     <property name="minimum" >
+      <number>1</number>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0" >
+    <widget class="QLabel" name="label_5" >
+     <property name="text" >
+      <string>Size of population</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1" >
+    <widget class="QSlider" name="sliderPool" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="3" >
+    <widget class="QSpinBox" name="numpoolEdit" >
+     <property name="minimum" >
+      <number>1</number>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0" colspan="2" >
+    <widget class="QLabel" name="label_6" >
+     <property name="text" >
+      <string>Probability of "Block" Mutator</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0" colspan="2" >
+    <widget class="QLabel" name="label_7" >
+     <property name="text" >
+      <string>Probability of "Reverse" Mutator</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0" colspan="2" >
+    <widget class="QLabel" name="label_8" >
+     <property name="text" >
+      <string>Probability of "Shuffle" Mutator</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0" colspan="2" >
+    <widget class="QLabel" name="label_9" >
+     <property name="text" >
+      <string>Probability of "Swap" Mutator</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="0" colspan="2" >
+    <widget class="QLabel" name="label_10" >
+     <property name="text" >
+      <string>Probabilty of  "Crossover" Mutator</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="0" >
+    <spacer>
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0" >
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="12" column="0" colspan="2" >
+    <widget class="QProgressBar" name="progressBar" >
+     <property name="value" >
+      <number>0</number>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="2" colspan="2" >
+    <widget class="QPushButton" name="computeButton" >
+     <property name="text" >
+      <string>Compute</string>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="0" colspan="2" >
+    <widget class="QLabel" name="progressLabel" >
+     <property name="text" >
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="3" >
+    <widget class="QDoubleSpinBox" name="mutBlock" >
+     <property name="maximum" >
+      <double>1.000000000000000</double>
+     </property>
+     <property name="singleStep" >
+      <double>0.010000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="3" >
+    <widget class="QDoubleSpinBox" name="mutInverse" >
+     <property name="maximum" >
+      <double>1.000000000000000</double>
+     </property>
+     <property name="singleStep" >
+      <double>0.010000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="3" >
+    <widget class="QDoubleSpinBox" name="mutShuffle" >
+     <property name="maximum" >
+      <double>1.000000000000000</double>
+     </property>
+     <property name="singleStep" >
+      <double>0.010000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="3" >
+    <widget class="QDoubleSpinBox" name="mutSwap" >
+     <property name="maximum" >
+      <double>1.000000000000000</double>
+     </property>
+     <property name="singleStep" >
+      <double>0.010000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="3" >
+    <widget class="QDoubleSpinBox" name="mutCrossover" >
+     <property name="maximum" >
+      <double>1.000000000000000</double>
+     </property>
+     <property name="singleStep" >
+      <double>0.010000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="0" >
+    <widget class="QLabel" name="label_11" >
+     <property name="text" >
+      <string>Size of Group of Pictures / Cycle Period</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="3" >
+    <widget class="QSpinBox" name="framelevel" >
+     <property name="minimum" >
+      <number>1</number>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="1" >
+    <widget class="QSlider" name="framelevelSlider" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>sliderDSteps</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>numdstepsEdit</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>236</x>
+     <y>22</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>435</x>
+     <y>22</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>numdstepsEdit</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>sliderDSteps</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>421</x>
+     <y>35</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>261</x>
+     <y>27</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sliderStates</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>numstatesEdit</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>272</x>
+     <y>58</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>421</x>
+     <y>55</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>numstatesEdit</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>sliderStates</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>415</x>
+     <y>57</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>271</x>
+     <y>50</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sliderAutoc</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>numautocEdit</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>259</x>
+     <y>94</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>438</x>
+     <y>98</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>numautocEdit</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>sliderAutoc</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>409</x>
+     <y>93</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>263</x>
+     <y>89</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sliderIterations</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>numiterationsEdit</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>282</x>
+     <y>116</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>455</x>
+     <y>127</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>numiterationsEdit</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>sliderIterations</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>409</x>
+     <y>115</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>281</x>
+     <y>117</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sliderPool</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>numpoolEdit</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>260</x>
+     <y>153</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>408</x>
+     <y>153</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>numpoolEdit</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>sliderPool</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>421</x>
+     <y>166</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>283</x>
+     <y>156</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>framelevelSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>framelevel</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>293</x>
+     <y>356</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>417</x>
+     <y>357</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>framelevel</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>framelevelSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>428</x>
+     <y>344</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>287</x>
+     <y>354</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

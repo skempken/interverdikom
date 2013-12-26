@@ -1,0 +1,110 @@
+<ui version="4.0" >
+ <class>RenewalModelerWidget</class>
+ <widget class="QWidget" name="RenewalModelerWidget" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>473</width>
+    <height>355</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" >
+   <item row="0" column="0" >
+    <widget class="QLabel" name="label" >
+     <property name="text" >
+      <string>Number of discretization steps</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" >
+    <widget class="QSlider" name="sliderDSteps" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3" >
+    <widget class="QSpinBox" name="numdstepsEdit" />
+   </item>
+   <item row="1" column="1" colspan="3" >
+    <spacer>
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0" >
+      <size>
+       <width>231</width>
+       <height>231</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="0" colspan="2" >
+    <widget class="QProgressBar" name="progressBar" >
+     <property name="value" >
+      <number>0</number>
+     </property>
+     <property name="textVisible" >
+      <bool>true</bool>
+     </property>
+     <property name="invertedAppearance" >
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2" colspan="2" >
+    <widget class="QPushButton" name="computeButton" >
+     <property name="text" >
+      <string>Compute</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="2" >
+    <widget class="QLabel" name="progressLabel" >
+     <property name="text" >
+      <string/>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>sliderDSteps</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>numdstepsEdit</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>254</x>
+     <y>26</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>443</x>
+     <y>35</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>numdstepsEdit</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>sliderDSteps</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>413</x>
+     <y>19</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>301</x>
+     <y>23</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,186 @@
+<ui version="4.0" >
+ <class>ExtractGopWidget</class>
+ <widget class="QWidget" name="ExtractGopWidget" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1010</width>
+    <height>557</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" >
+   <item>
+    <widget class="QGroupBox" name="groupBox_3" >
+     <property name="title" >
+      <string>Autocorrelation</string>
+     </property>
+     <layout class="QGridLayout" >
+      <item row="0" column="0" colspan="6" >
+       <widget class="IvkPlot" native="1" name="plot" />
+      </item>
+      <item row="1" column="0" >
+       <widget class="QLabel" name="label_3" >
+        <property name="text" >
+         <string>Highest Max:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" >
+       <widget class="QLabel" name="highestLabel" >
+        <property name="text" >
+         <string>-</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2" >
+       <spacer>
+        <property name="orientation" >
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" >
+         <size>
+          <width>33</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="1" column="3" >
+       <widget class="QLabel" name="label_5" >
+        <property name="text" >
+         <string>Avg Max:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4" >
+       <widget class="QLabel" name="averageLabel" >
+        <property name="text" >
+         <string>-</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="5" >
+       <widget class="QPushButton" name="useAvgButton" >
+        <property name="text" >
+         <string>Use as bound</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" >
+     <item>
+      <widget class="QGroupBox" name="groupBox" >
+       <property name="sizePolicy" >
+        <sizepolicy vsizetype="Preferred" hsizetype="Preferred" >
+         <horstretch>4</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="title" >
+        <string>Settings</string>
+       </property>
+       <layout class="QGridLayout" >
+        <item row="0" column="0" >
+         <widget class="QLabel" name="label" >
+          <property name="text" >
+           <string>Sequence Length</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" >
+         <widget class="QSpinBox" name="lengthSpin" />
+        </item>
+        <item row="0" column="2" >
+         <widget class="QSlider" name="lengthSlider" >
+          <property name="orientation" >
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" >
+         <widget class="QLabel" name="label_2" >
+          <property name="text" >
+           <string>Lower Bound</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1" >
+         <widget class="QDoubleSpinBox" name="boundSpin" >
+          <property name="maximum" >
+           <double>1.000000000000000</double>
+          </property>
+          <property name="singleStep" >
+           <double>0.010000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2" >
+         <widget class="QSlider" name="boundSlider" >
+          <property name="maximum" >
+           <number>100</number>
+          </property>
+          <property name="value" >
+           <number>50</number>
+          </property>
+          <property name="orientation" >
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox_2" >
+       <property name="sizePolicy" >
+        <sizepolicy vsizetype="Preferred" hsizetype="Preferred" >
+         <horstretch>1</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="title" >
+        <string>Result</string>
+       </property>
+       <layout class="QGridLayout" >
+        <item row="0" column="0" >
+         <widget class="QLabel" name="label_4" >
+          <property name="text" >
+           <string>Interval:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2" >
+         <widget class="QPushButton" name="performButton" >
+          <property name="text" >
+           <string>Perform Aggregation</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" >
+         <widget class="QSpinBox" name="intervalEdit" />
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>IvkPlot</class>
+   <extends>QWidget</extends>
+   <header>widget/IvkPlot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

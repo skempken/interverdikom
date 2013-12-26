@@ -1,0 +1,525 @@
+<ui version="4.0" >
+ <class>ExportGraphDialog</class>
+ <widget class="QDialog" name="ExportGraphDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>557</width>
+    <height>407</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Export graph</string>
+  </property>
+  <property name="modal" >
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" >
+   <property name="margin" >
+    <number>9</number>
+   </property>
+   <property name="spacing" >
+    <number>6</number>
+   </property>
+   <item>
+    <widget class="QGroupBox" name="outputFileGroup" >
+     <property name="title" >
+      <string>Output file</string>
+     </property>
+     <layout class="QVBoxLayout" >
+      <property name="margin" >
+       <number>9</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item>
+       <layout class="QVBoxLayout" >
+        <property name="margin" >
+         <number>0</number>
+        </property>
+        <property name="spacing" >
+         <number>6</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" >
+          <property name="margin" >
+           <number>0</number>
+          </property>
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <item>
+           <widget class="QLineEdit" name="pathEdit" >
+            <property name="enabled" >
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="browseButton" >
+            <property name="text" >
+             <string>Browse...</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="outputFileNoteLabel" >
+          <property name="text" >
+           <string>Note: File extension determines output format.</string>
+          </property>
+          <property name="buddy" >
+           <cstring>pathEdit</cstring>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="sizeGroup" >
+     <property name="title" >
+      <string>Size</string>
+     </property>
+     <layout class="QVBoxLayout" >
+      <property name="margin" >
+       <number>9</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" >
+        <property name="margin" >
+         <number>0</number>
+        </property>
+        <property name="spacing" >
+         <number>6</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="widthLabel" >
+          <property name="text" >
+           <string>Width:</string>
+          </property>
+          <property name="buddy" >
+           <cstring>widthEdit</cstring>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer>
+          <property name="orientation" >
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType" >
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" >
+           <size>
+            <width>10</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="widthEdit" >
+          <property name="sizePolicy" >
+           <sizepolicy>
+            <hsizetype>0</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer>
+          <property name="orientation" >
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType" >
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" >
+           <size>
+            <width>10</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="heightLabel" >
+          <property name="text" >
+           <string>Height:</string>
+          </property>
+          <property name="buddy" >
+           <cstring>heightEdit</cstring>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer>
+          <property name="orientation" >
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType" >
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" >
+           <size>
+            <width>10</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="heightEdit" >
+          <property name="sizePolicy" >
+           <sizepolicy>
+            <hsizetype>0</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer>
+          <property name="orientation" >
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType" >
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" >
+           <size>
+            <width>10</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="ratioCheck" >
+          <property name="text" >
+           <string>Keep current ratio</string>
+          </property>
+          <property name="checked" >
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer>
+          <property name="orientation" >
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" >
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" >
+        <property name="margin" >
+         <number>0</number>
+        </property>
+        <property name="spacing" >
+         <number>6</number>
+        </property>
+        <item>
+         <widget class="QRadioButton" name="exportEntireGraphRadio" >
+          <property name="text" >
+           <string>Export entire graph</string>
+          </property>
+          <property name="checked" >
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer>
+          <property name="orientation" >
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType" >
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" >
+           <size>
+            <width>16</width>
+            <height>22</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="exportDisplayedAreaRadio" >
+          <property name="text" >
+           <string>Export currently displayed area</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer>
+          <property name="orientation" >
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" >
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="compressionGroup" >
+     <property name="title" >
+      <string>Compression</string>
+     </property>
+     <layout class="QVBoxLayout" >
+      <property name="margin" >
+       <number>9</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item>
+       <layout class="QVBoxLayout" >
+        <property name="margin" >
+         <number>0</number>
+        </property>
+        <property name="spacing" >
+         <number>6</number>
+        </property>
+        <item>
+         <widget class="QRadioButton" name="compressionAutoRadio" >
+          <property name="text" >
+           <string>Auto</string>
+          </property>
+          <property name="checked" >
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="compressionManualRadio" >
+          <property name="text" >
+           <string>Specify compression level:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSlider" name="compressionSlider" >
+          <property name="enabled" >
+           <bool>false</bool>
+          </property>
+          <property name="maximum" >
+           <number>100</number>
+          </property>
+          <property name="singleStep" >
+           <number>5</number>
+          </property>
+          <property name="value" >
+           <number>80</number>
+          </property>
+          <property name="orientation" >
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="tickPosition" >
+           <enum>QSlider::TicksBelow</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" >
+        <property name="margin" >
+         <number>0</number>
+        </property>
+        <property name="spacing" >
+         <number>6</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="compressionSmallestSizeLabel" >
+          <property name="enabled" >
+           <bool>false</bool>
+          </property>
+          <property name="text" >
+           <string>Smallest file size</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer>
+          <property name="orientation" >
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" >
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="compressionBestQualityLabel" >
+          <property name="enabled" >
+           <bool>false</bool>
+          </property>
+          <property name="text" >
+           <string>Best quality</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer>
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" >
+      <size>
+       <width>539</width>
+       <height>16</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" >
+     <property name="margin" >
+      <number>0</number>
+     </property>
+     <property name="spacing" >
+      <number>6</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="cancelButton" >
+       <property name="text" >
+        <string>Cancel</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="exportButton" >
+       <property name="text" >
+        <string>Export</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>ratioCheck</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>exportDisplayedAreaRadio</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>472</x>
+     <y>302</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>283</x>
+     <y>329</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ratioCheck</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>exportEntireGraphRadio</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>418</x>
+     <y>301</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>88</x>
+     <y>341</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>compressionManualRadio</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>compressionSlider</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>83</x>
+     <y>179</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>84</x>
+     <y>197</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>compressionManualRadio</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>compressionSmallestSizeLabel</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>52</x>
+     <y>177</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>55</x>
+     <y>228</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>compressionManualRadio</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>compressionBestQualityLabel</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>207</x>
+     <y>171</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>498</x>
+     <y>230</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

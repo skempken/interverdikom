@@ -1,0 +1,83 @@
+<ui version="4.0" >
+ <class>SSMPQueueDisplayWidget</class>
+ <widget class="QWidget" name="SSMPQueueDisplayWidget" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>820</width>
+    <height>597</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" >
+   <property name="spacing" >
+    <number>6</number>
+   </property>
+   <property name="leftMargin" >
+    <number>9</number>
+   </property>
+   <property name="topMargin" >
+    <number>9</number>
+   </property>
+   <property name="rightMargin" >
+    <number>9</number>
+   </property>
+   <property name="bottomMargin" >
+    <number>9</number>
+   </property>
+   <item>
+    <widget class="QTabWidget" name="tabWidget" >
+     <property name="tabPosition" >
+      <enum>QTabWidget::South</enum>
+     </property>
+     <property name="currentIndex" >
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_3" >
+      <attribute name="title" >
+       <string>Queue Model</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+       <item>
+        <widget class="StochasticProcessWidget" native="1" name="resultWidget" />
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab" >
+      <attribute name="title" >
+       <string>Arrival Process</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+       <item>
+        <widget class="StochasticProcessWidget" native="1" name="arrivalWidget" />
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2" >
+      <attribute name="title" >
+       <string>Service Process</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+       <item>
+        <widget class="StochasticProcessWidget" native="1" name="serviceWidget" />
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>StochasticProcessWidget</class>
+   <extends>QWidget</extends>
+   <header>widget/StochasticProcessWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
