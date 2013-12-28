@@ -1,0 +1,3 @@
+Zustandsindizes: 0 oder 1-basiert?
+- Wenn auf Zustand bezogen: 1..M
+- Wenn auf Verteilung bezogen: 0..g

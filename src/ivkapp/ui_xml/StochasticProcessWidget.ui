@@ -1,0 +1,278 @@
+<ui version="4.0" >
+ <class>StochasticProcessWidget</class>
+ <widget class="QWidget" name="StochasticProcessWidget" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>508</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" >
+   <property name="leftMargin" >
+    <number>9</number>
+   </property>
+   <property name="topMargin" >
+    <number>9</number>
+   </property>
+   <property name="rightMargin" >
+    <number>9</number>
+   </property>
+   <property name="bottomMargin" >
+    <number>9</number>
+   </property>
+   <property name="horizontalSpacing" >
+    <number>6</number>
+   </property>
+   <property name="verticalSpacing" >
+    <number>6</number>
+   </property>
+   <item row="0" column="0" >
+    <widget class="QTabWidget" name="tabWidget" >
+     <property name="currentIndex" >
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="distGraphTab" >
+      <attribute name="title" >
+       <string>Distribution Graph</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+       <item>
+        <widget class="QSplitter" name="splitter" >
+         <property name="orientation" >
+          <enum>Qt::Vertical</enum>
+         </property>
+         <widget class="IvkPlot" native="1" name="distGraph" />
+         <widget class="QTableWidget" name="distGraphTable" >
+          <row>
+           <property name="text" >
+            <string>State #</string>
+           </property>
+          </row>
+          <row>
+           <property name="text" >
+            <string>Mean</string>
+           </property>
+          </row>
+          <row>
+           <property name="text" >
+            <string>StdDev</string>
+           </property>
+          </row>
+          <row>
+           <property name="text" >
+            <string>StatProb</string>
+           </property>
+          </row>
+          <row>
+           <property name="text" >
+            <string>Range</string>
+           </property>
+          </row>
+          <row>
+           <property name="text" >
+            <string/>
+           </property>
+          </row>
+          <column/>
+          <item row="0" column="0" >
+           <property name="text" >
+            <string>Show all</string>
+           </property>
+          </item>
+          <item row="1" column="0" >
+           <property name="text" >
+            <string>Show all</string>
+           </property>
+          </item>
+          <item row="2" column="0" >
+           <property name="text" >
+            <string>Show all</string>
+           </property>
+          </item>
+          <item row="3" column="0" >
+           <property name="text" >
+            <string>Scale</string>
+           </property>
+          </item>
+          <item row="5" column="0" >
+           <property name="text" >
+            <string>Show all</string>
+           </property>
+          </item>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="distTableTab" >
+      <attribute name="title" >
+       <string>Distribution Table</string>
+      </attribute>
+      <layout class="QGridLayout" >
+       <property name="leftMargin" >
+        <number>9</number>
+       </property>
+       <property name="topMargin" >
+        <number>9</number>
+       </property>
+       <property name="rightMargin" >
+        <number>9</number>
+       </property>
+       <property name="bottomMargin" >
+        <number>9</number>
+       </property>
+       <property name="horizontalSpacing" >
+        <number>6</number>
+       </property>
+       <property name="verticalSpacing" >
+        <number>6</number>
+       </property>
+       <item row="0" column="0" >
+        <widget class="IvkTableWidget" name="distTable" />
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="quantileTab" >
+      <attribute name="title" >
+       <string>Distribution Quantiles</string>
+      </attribute>
+      <layout class="QGridLayout" >
+       <item row="0" column="0" colspan="4" >
+        <widget class="IvkTableWidget" name="quantileTable" >
+         <column>
+          <property name="text" >
+           <string>Limit</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+       <item row="1" column="0" >
+        <widget class="QLabel" name="label_2" >
+         <property name="text" >
+          <string>Limit:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1" >
+        <widget class="QLineEdit" name="quantileEdit" >
+         <property name="text" >
+          <string>0.1</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2" >
+        <widget class="QPushButton" name="addQuantileButton" >
+         <property name="text" >
+          <string>Calculate</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3" >
+        <spacer>
+         <property name="orientation" >
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" >
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="transitionTab" >
+      <attribute name="title" >
+       <string>Transitions</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+       <item>
+        <widget class="IvkTableWidget" name="transitionTable" />
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="autocorrelationTab" >
+      <attribute name="title" >
+       <string>Autocorrelation</string>
+      </attribute>
+      <layout class="QGridLayout" >
+       <item row="0" column="0" colspan="3" >
+        <widget class="IvkPlot" native="1" name="autocorrelationPlot" />
+       </item>
+       <item row="1" column="0" >
+        <widget class="QLabel" name="label" >
+         <property name="text" >
+          <string>Up To:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1" >
+        <widget class="QSpinBox" name="upToSpin" />
+       </item>
+       <item row="1" column="2" >
+        <widget class="QSlider" name="horizontalSlider" >
+         <property name="orientation" >
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>IvkPlot</class>
+   <extends>QWidget</extends>
+   <header>IvkPlot.h</header>
+  </customwidget>
+  <customwidget>
+   <class>IvkTableWidget</class>
+   <extends>QTableWidget</extends>
+   <header>IvkTableWidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>upToSpin</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>horizontalSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>83</x>
+     <y>517</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>175</x>
+     <y>516</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>upToSpin</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>248</x>
+     <y>517</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>105</x>
+     <y>512</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

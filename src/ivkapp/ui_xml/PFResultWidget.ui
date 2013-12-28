@@ -1,0 +1,66 @@
+<ui version="4.0" >
+ <class>PFResultWidget</class>
+ <widget class="QWidget" name="PFResultWidget" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>983</width>
+    <height>751</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" >
+   <item>
+    <widget class="QTabWidget" name="tabWidget" >
+     <property name="currentIndex" >
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab" >
+      <attribute name="title" >
+       <string>Eigenvalue Graph</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+       <item>
+        <widget class="IvkPlot" native="1" name="plot" />
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2" >
+      <attribute name="title" >
+       <string>Table</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+       <item>
+        <widget class="IvkTableWidget" name="table" >
+         <column>
+          <property name="text" >
+           <string>Eigenvalue</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>IvkPlot</class>
+   <extends>QWidget</extends>
+   <header>widget/IvkPlot.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>IvkTableWidget</class>
+   <extends>QTableWidget</extends>
+   <header>IvkTableWidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,170 @@
+<ui version="4.0" >
+ <class>StateMergeWidget</class>
+ <widget class="QWidget" name="StateMergeWidget" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>472</width>
+    <height>354</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" >
+   <item row="0" column="0" >
+    <widget class="QLabel" name="label" >
+     <property name="text" >
+      <string>Number of state contractions</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" colspan="2" >
+    <widget class="QSlider" name="sliderContractions" >
+     <property name="minimum" >
+      <number>2</number>
+     </property>
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3" >
+    <spacer>
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" >
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="4" >
+    <widget class="QSpinBox" name="numContractions" >
+     <property name="minimum" >
+      <number>2</number>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2" >
+    <widget class="QRadioButton" name="statProb" >
+     <property name="text" >
+      <string>Stationary probabilities</string>
+     </property>
+     <property name="checked" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2" colspan="2" >
+    <widget class="QRadioButton" name="means" >
+     <property name="text" >
+      <string>State means</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="5" >
+    <widget class="QTableWidget" name="contractTable" >
+     <property name="sizePolicy" >
+      <sizepolicy vsizetype="Expanding" hsizetype="Expanding" >
+       <horstretch>1</horstretch>
+       <verstretch>1</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="rowCount" >
+      <number>1</number>
+     </property>
+     <row/>
+     <column>
+      <property name="text" >
+       <string>#state</string>
+      </property>
+     </column>
+     <column>
+      <property name="text" >
+       <string>stat prob</string>
+      </property>
+     </column>
+     <column>
+      <property name="text" >
+       <string>mean</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="4" >
+    <spacer>
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" >
+      <size>
+       <width>354</width>
+       <height>31</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="4" column="0" colspan="3" >
+    <widget class="QProgressBar" name="progressBar" >
+     <property name="value" >
+      <number>0</number>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="3" colspan="2" >
+    <widget class="QPushButton" name="computeButton" >
+     <property name="text" >
+      <string>Compute</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0" colspan="3" >
+    <widget class="QLabel" name="progressLabel" >
+     <property name="text" >
+      <string/>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>sliderContractions</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>numContractions</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>263</x>
+     <y>30</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>432</x>
+     <y>32</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>numContractions</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>sliderContractions</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>421</x>
+     <y>15</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>263</x>
+     <y>30</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

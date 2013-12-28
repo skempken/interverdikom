@@ -1,0 +1,33 @@
+<!ELEMENT SMPQueue (ArrivalProcess,ServiceProcess)>
+<!ATTLIST SMPQueue
+	type (InterArrival|TimeSlotted) #REQUIRED
+>
+
+	<!ELEMENT ArrivalProcess (SMProcess)>
+	
+		<!ELEMENT SMProcess (TransitionMatrix,Distribution+)>
+		<!ATTLIST SMProcess
+			numStates CDATA #REQUIRED
+		>
+		
+			<!ELEMENT TransitionMatrix (MatrixValue+)>
+			
+				<!ELEMENT MatrixValue (#PCDATA)>
+				<!ATTLIST MatrixValue
+					fromState CDATA #REQUIRED
+					toState CDATA #REQUIRED
+				>
+				
+			<!ELEMENT Distribution (DistValue)>
+			<!ATTLIST Distribution
+				stateIndex CDATA #IMPLIED
+				steps CDATA #REQUIRED
+			>
+			
+				<!ELEMENT DistValue (#PCDATA)>
+				<!ATTLIST DistValue
+					steps CDATA #REQUIRED
+				>
+			
+	<!ELEMENT ServiceProcess (GIProcess)>
+		<!ELEMENT GIProcess (Distribution+)>

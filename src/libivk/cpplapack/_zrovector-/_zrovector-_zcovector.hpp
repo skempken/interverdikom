@@ -1,0 +1,26 @@
+//=============================================================================
+/*! _zrovector*_zcovector operator */
+inline std::complex<double> operator*(const _zrovector& rovec, const _zcovector& covec)
+{
+#ifdef  CPPL_VERBOSE
+  std::cerr << "# [MARK] operator*(const _zrovector&, const _zcovector&)"
+            << std::endl;
+#endif//CPPL_VERBOSE
+  
+#ifdef  CPPL_DEBUG
+  if(rovec.L!=covec.L){
+    std::cerr << "[ERROR] operator*(const _zrovector&, const _zcovector&)"
+              << std::endl
+              << "These two vectors can not make a product." << std::endl
+              << "Your input was (" << rovec.L << ") * (" << covec.L << ")."
+              << std::endl;
+    exit(1);
+  }
+#endif//CPPL_DEBUG
+  
+  std::complex<double> val( zdotu_( rovec.L, rovec.Array, 1, covec.Array, 1 ) );
+  
+  rovec.destroy();
+  covec.destroy();
+  return val;
+}

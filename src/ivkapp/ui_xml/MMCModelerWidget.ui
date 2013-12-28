@@ -1,0 +1,274 @@
+<ui version="4.0" >
+ <class>MMCModelerWidget</class>
+ <widget class="QWidget" name="MMCModelerWidget" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>509</width>
+    <height>344</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" >
+   <item row="0" column="0" >
+    <widget class="QLabel" name="label" >
+     <property name="text" >
+      <string>Number of discretization steps</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3" >
+    <widget class="QSpinBox" name="numdstepsEdit" >
+     <property name="minimum" >
+      <number>1</number>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" >
+    <widget class="QLabel" name="label_3" >
+     <property name="toolTip" >
+      <string>Number of values to consider for Moving Average
+</string>
+     </property>
+     <property name="text" >
+      <string>Number of values to consider for moving average</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3" >
+    <widget class="QSpinBox" name="wEdit" >
+     <property name="minimum" >
+      <number>1</number>
+     </property>
+     <property name="maximum" >
+      <number>99</number>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" >
+    <widget class="QLabel" name="label_4" >
+     <property name="text" >
+      <string>Number of states for moving average</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3" >
+    <widget class="QSpinBox" name="MaEdit" >
+     <property name="minimum" >
+      <number>1</number>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" >
+    <widget class="QLabel" name="label_5" >
+     <property name="text" >
+      <string>Number of states for discretization</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="3" >
+    <widget class="QSpinBox" name="MsEdit" >
+     <property name="minimum" >
+      <number>1</number>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0" colspan="4" >
+    <spacer>
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0" >
+      <size>
+       <width>271</width>
+       <height>21</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="5" column="0" colspan="2" >
+    <widget class="QProgressBar" name="progressBar" >
+     <property name="value" >
+      <number>0</number>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="2" colspan="2" >
+    <widget class="QPushButton" name="computeButton" >
+     <property name="text" >
+      <string>Compute</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0" colspan="2" >
+    <widget class="QLabel" name="progressLabel" >
+     <property name="text" >
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1" colspan="2" >
+    <widget class="QSlider" name="sliderW" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" colspan="2" >
+    <widget class="QSlider" name="sliderDSteps" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1" colspan="2" >
+    <widget class="QSlider" name="sliderMa" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1" colspan="2" >
+    <widget class="QSlider" name="sliderMs" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>sliderDSteps</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>numdstepsEdit</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>290</x>
+     <y>24</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>408</x>
+     <y>24</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>numdstepsEdit</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>sliderDSteps</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>412</x>
+     <y>14</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>278</x>
+     <y>26</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sliderW</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>wEdit</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>291</x>
+     <y>55</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>422</x>
+     <y>58</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>wEdit</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>sliderW</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>412</x>
+     <y>47</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>280</x>
+     <y>58</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sliderMa</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>MaEdit</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>249</x>
+     <y>84</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>421</x>
+     <y>97</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MaEdit</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>sliderMa</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>421</x>
+     <y>81</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>277</x>
+     <y>88</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sliderMs</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>MsEdit</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>295</x>
+     <y>121</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>445</x>
+     <y>129</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MsEdit</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>sliderMs</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>419</x>
+     <y>117</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>268</x>
+     <y>121</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

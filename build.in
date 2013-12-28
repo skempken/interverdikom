@@ -1,0 +1,62 @@
+#!/bin/sh
+
+#################################################################################
+# File: build.in / ./build
+# Purpose : Custom build script
+
+
+# The /src subfolders that should be built.
+# Add new source folders here!
+# This also defines the order in which the folders
+# will be built.
+
+SOURCEDIRS="libivk libivknetwork librfp rawfileparser ivkapp ivktest"
+
+#
+# configuration ends here
+#################################################################################
+
+
+
+echo -n "SUBDIRS = " > subdirs.pro   # Init subdirs.pro
+
+for srcdir in $SOURCEDIRS   # Iterate over sourcedirs
+do
+	if ! test -d "src/$srcdir"   # Check for existence of this dir
+	then
+		echo "$srcdir not present!"
+	else
+		echo "$0 : Creating QMake project for $srcdir"
+		cd "src/$srcdir"   # CD to dir and create project file
+		@qmake_loc@ -project -after "
+			#=== Static configuration ===#
+			include(../../qmake-config.pro)
+			include(qmake-config.pro)"
+			
+		cd ../.. # CD back
+		echo -n "src/$srcdir " >> subdirs.pro   # Add source directory to subdirs.pro
+	fi
+done
+
+
+echo "$0 : Copying help documents"
+if ! test -d "bin/help"   # Check for existence of help directory
+then
+	echo "$0 : Creating help document directory"
+	mkdir bin/help  # Create help directory if not existing
+fi
+cp -Rf doc/help/* bin/help
+
+echo "$0 : Creating makefiles"
+@qmake_loc@ -makefile ivk.pro   # Create all makefiles via root project file
+
+echo "$0 : Starting make process"
+make -j `grep processor /proc/cpuinfo | wc -l` $@   # Call make with the given parameters
+
+if [ "$?" != "0" ]
+then
+	echo "$0 : make failed, exiting."
+	exit 1
+fi
+
+echo "$0 : All done."

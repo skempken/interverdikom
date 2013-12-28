@@ -1,0 +1,22 @@
+
+Log des Winbuildversuchs:
+
+- Installation von "Eclipse for C++ developers"
+- Installation von Subclipse, Checkout von InterVerdiKom
+- Installation von Qt über den .exe-Installer, dabei MinGW automatisch heruntergeladen (beides ins Default-Installverzeichnis)
+- Installation von MSYS über den .exe-Installer (ins Default-Installverzeichnis)
+- Qt-, MinGW- und MSYS-"/bin"-Verzeichnisse in die PATH-Variable eingetragen
+- Installation von CXSC in der Version "Windows: Pre-compiled version of C-XSC with an installer program", Standardpfad
+- Download von Qwt als .zip, Entpacken ins Tempverzeichnis
+- Erstelle Verzeichnis C:\Qwt-5.0.2 (Default-Installationsverzeichnis, änderbar in qwtconfig.pri, muss vorhanden sein, damit make install geht)
+- In der Windows-Shell:
+	> cd c:\Temp\qwt
+	> qmake
+	> mingw32-make
+	> mingw32-make install
+- Download von FFTW, Windows-Version (fftw-3.1.2-dll.zip)
+- Aus der ZIP-Datei die fftw3.h in das MinGW-Includeverzeichnis kopieren (bspw. "C:\MinGW\include")
+- Nun Konfigurieren des Projektes, dazu in der Windows-Shell
+	> cd c:\...\workspace\InterVerdiKom
+	> sh configure
+	Jetzt das CXSC- und Qwt-Verzeichnis im Format x:/path/to/dir angeben (d.h. Forward-Slashes und kein trailing Slash!)
