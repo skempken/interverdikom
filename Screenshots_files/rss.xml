@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:iphoto="urn:iphoto:property" xmlns:iweb="http://www.apple.com/iweb" version="2.0">
+  <channel>
+    <title>Screenshots</title>
+    <link>http://www.interverdikom.de/InterVerdiKom/Screenshots.html</link>
+    <description>Im Folgenden sind einige Screenshots zu sehen, die typische Eingabemasken von InterVerdiKom zeigen. Es wird eine Eingangsdatenreihe modelliert und mittels polynomialer Faktorisierung analysiert, um die Arbeitslast (Workload) an einem Netzknoten zu bestimmen.</description>
+    <item>
+      <title>Screenshot der Anwendung</title>
+      <link>http://www.interverdikom.de/InterVerdiKom/Screenshots.html#0</link>
+      <guid isPermaLink="false">695b8677-ef26-4c82-975e-bc2b1eddedf9</guid>
+      <enclosure url="http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Screenshot-IVK/Screenshot-IVK.jpg" length="92218" type="image/jpeg"/>
+      <iphoto:thumbnail>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Screenshot-IVK/thumb.jpg</iphoto:thumbnail>
+      <iweb:micro>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Screenshot-IVK/micro.jpg</iweb:micro>
+      <iweb:richTitle>&lt;div style=&quot;padding: 0px; &quot; class=&quot;image_cluster_layout_style_default_External_165_32&quot;&gt;&lt;div class=&quot;image_cluster_layout_style_default&quot;&gt;&lt;p style=&quot;padding-bottom: 0pt; padding-top: 0pt; &quot; class=&quot;Caption&quot;&gt;Screenshot der Anwendung&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</iweb:richTitle>
+    </item>
+    <item>
+      <title>Eingangsdatenreihe</title>
+      <link>http://www.interverdikom.de/InterVerdiKom/Screenshots.html#1</link>
+      <guid isPermaLink="false">ed56cf18-e7c0-4ea9-a4e5-518f622afb16</guid>
+      <enclosure url="http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Trace-01/Trace-01.jpg" length="80151" type="image/jpeg"/>
+      <iphoto:thumbnail>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Trace-01/thumb.jpg</iphoto:thumbnail>
+      <iweb:micro>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Trace-01/micro.jpg</iweb:micro>
+      <iweb:richTitle>&lt;div style=&quot;padding: 0px; &quot; class=&quot;image_cluster_layout_style_default_External_165_32&quot;&gt;&lt;div class=&quot;image_cluster_layout_style_default&quot;&gt;&lt;p style=&quot;padding-bottom: 0pt; padding-top: 0pt; &quot; class=&quot;Caption&quot;&gt;Eingangsdatenreihe&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</iweb:richTitle>
+    </item>
+    <item>
+      <title>Histogramm der Eingangsdatenreihe</title>
+      <link>http://www.interverdikom.de/InterVerdiKom/Screenshots.html#2</link>
+      <guid isPermaLink="false">9a569358-4775-4045-94bf-956707282245</guid>
+      <enclosure url="http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Trace-02/Trace-02.jpg" length="55947" type="image/jpeg"/>
+      <iphoto:thumbnail>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Trace-02/thumb.jpg</iphoto:thumbnail>
+      <iweb:micro>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Trace-02/micro.jpg</iweb:micro>
+      <iweb:richTitle>&lt;div style=&quot;padding: 0px; &quot; class=&quot;image_cluster_layout_style_default_External_165_32&quot;&gt;&lt;div class=&quot;image_cluster_layout_style_default&quot;&gt;&lt;p style=&quot;padding-bottom: 0pt; padding-top: 0pt; &quot; class=&quot;Caption&quot;&gt;Histogramm der Eingangsdatenreihe&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</iweb:richTitle>
+    </item>
+    <item>
+      <title>Autokorrelation der Eingangsdatenreihe</title>
+      <link>http://www.interverdikom.de/InterVerdiKom/Screenshots.html#3</link>
+      <guid isPermaLink="false">dd771c11-e7b6-4b1c-bad6-ba2c6323bcd8</guid>
+      <enclosure url="http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Trace-03/Trace-03.jpg" length="77219" type="image/jpeg"/>
+      <iphoto:thumbnail>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Trace-03/thumb.jpg</iphoto:thumbnail>
+      <iweb:micro>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Trace-03/micro.jpg</iweb:micro>
+      <iweb:richTitle>&lt;div style=&quot;padding: 0px; &quot; class=&quot;image_cluster_layout_style_default_External_165_32&quot;&gt;&lt;div class=&quot;image_cluster_layout_style_default&quot;&gt;&lt;p style=&quot;padding-bottom: 0pt; padding-top: 0pt; &quot; class=&quot;Caption&quot;&gt;Autokorrelation der Eingangsdatenreihe&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</iweb:richTitle>
+    </item>
+    <item>
+      <title>Aggregation von Bildfolgen</title>
+      <link>http://www.interverdikom.de/InterVerdiKom/Screenshots.html#4</link>
+      <guid isPermaLink="false">cd3e9e72-4d98-407b-afda-91713a1d3fee</guid>
+      <enclosure url="http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/GoP-Aggregation-01/GoP-Aggregation-01.jpg" length="77770" type="image/jpeg"/>
+      <iphoto:thumbnail>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/GoP-Aggregation-01/thumb.jpg</iphoto:thumbnail>
+      <iweb:micro>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/GoP-Aggregation-01/micro.jpg</iweb:micro>
+      <iweb:richTitle>&lt;div style=&quot;padding: 0px; &quot; class=&quot;image_cluster_layout_style_default_External_165_32&quot;&gt;&lt;div class=&quot;image_cluster_layout_style_default&quot;&gt;&lt;p style=&quot;padding-bottom: 0pt; padding-top: 0pt; &quot; class=&quot;Caption&quot;&gt;Aggregation von Bildfolgen&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</iweb:richTitle>
+    </item>
+    <item>
+      <title>Datenreihe nach Aggregation</title>
+      <link>http://www.interverdikom.de/InterVerdiKom/Screenshots.html#5</link>
+      <guid isPermaLink="false">bdf02f12-5786-41b9-b903-4631e830b9ee</guid>
+      <enclosure url="http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Trace-11/Trace-11.jpg" length="76669" type="image/jpeg"/>
+      <iphoto:thumbnail>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Trace-11/thumb.jpg</iphoto:thumbnail>
+      <iweb:micro>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Trace-11/micro.jpg</iweb:micro>
+      <iweb:richTitle>&lt;div style=&quot;padding: 0px; &quot; class=&quot;image_cluster_layout_style_default_External_165_32&quot;&gt;&lt;div class=&quot;image_cluster_layout_style_default&quot;&gt;&lt;p style=&quot;padding-bottom: 0pt; padding-top: 0pt; &quot; class=&quot;Caption&quot;&gt;Datenreihe nach Aggregation&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</iweb:richTitle>
+    </item>
+    <item>
+      <title>Histogramm nach Aggregation</title>
+      <link>http://www.interverdikom.de/InterVerdiKom/Screenshots.html#6</link>
+      <guid isPermaLink="false">7dc09053-afab-4f4d-bd89-cb585a95d7ff</guid>
+      <enclosure url="http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Trace-12/Trace-12.jpg" length="58142" type="image/jpeg"/>
+      <iphoto:thumbnail>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Trace-12/thumb.jpg</iphoto:thumbnail>
+      <iweb:micro>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Trace-12/micro.jpg</iweb:micro>
+      <iweb:richTitle>&lt;div style=&quot;padding: 0px; &quot; class=&quot;image_cluster_layout_style_default_External_165_32&quot;&gt;&lt;div class=&quot;image_cluster_layout_style_default&quot;&gt;&lt;p style=&quot;padding-bottom: 0pt; padding-top: 0pt; &quot; class=&quot;Caption&quot;&gt;Histogramm nach Aggregation&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</iweb:richTitle>
+    </item>
+    <item>
+      <title>Modellierung mittels Optimierung</title>
+      <link>http://www.interverdikom.de/InterVerdiKom/Screenshots.html#7</link>
+      <guid isPermaLink="false">9057419d-7412-4e92-9f2f-6034864950e6</guid>
+      <enclosure url="http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Genetic-01/Genetic-01.jpg" length="56328" type="image/jpeg"/>
+      <iphoto:thumbnail>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Genetic-01/thumb.jpg</iphoto:thumbnail>
+      <iweb:micro>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Genetic-01/micro.jpg</iweb:micro>
+      <iweb:richTitle>&lt;div style=&quot;padding: 0px; &quot; class=&quot;image_cluster_layout_style_default_External_165_32&quot;&gt;&lt;div class=&quot;image_cluster_layout_style_default&quot;&gt;&lt;p style=&quot;padding-bottom: 0pt; padding-top: 0pt; &quot; class=&quot;Caption&quot;&gt;Modellierung mittels Optimierung&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</iweb:richTitle>
+    </item>
+    <item>
+      <title>Modellierung mittels Partitionierung</title>
+      <link>http://www.interverdikom.de/InterVerdiKom/Screenshots.html#8</link>
+      <guid isPermaLink="false">3bdfaca1-2dba-4d25-a7f2-8063ed077c77</guid>
+      <enclosure url="http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/SA-Partition-01/SA-Partition-01.jpg" length="48929" type="image/jpeg"/>
+      <iphoto:thumbnail>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/SA-Partition-01/thumb.jpg</iphoto:thumbnail>
+      <iweb:micro>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/SA-Partition-01/micro.jpg</iweb:micro>
+      <iweb:richTitle>&lt;div style=&quot;padding: 0px; &quot; class=&quot;image_cluster_layout_style_default_External_165_32&quot;&gt;&lt;div class=&quot;image_cluster_layout_style_default&quot;&gt;&lt;p style=&quot;padding-bottom: 0pt; padding-top: 0pt; &quot; class=&quot;Caption&quot;&gt;Modellierung mittels Partitionierung&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</iweb:richTitle>
+    </item>
+    <item>
+      <title>Darstellung von Verteilungen (grafisch)</title>
+      <link>http://www.interverdikom.de/InterVerdiKom/Screenshots.html#9</link>
+      <guid isPermaLink="false">a5cacb6b-2f8f-46ab-bdab-4c8be0a97b93</guid>
+      <enclosure url="http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Arrival-01/Arrival-01.jpg" length="98217" type="image/jpeg"/>
+      <iphoto:thumbnail>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Arrival-01/thumb.jpg</iphoto:thumbnail>
+      <iweb:micro>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Arrival-01/micro.jpg</iweb:micro>
+      <iweb:richTitle>&lt;div style=&quot;padding: 0px; &quot; class=&quot;image_cluster_layout_style_default_External_165_32&quot;&gt;&lt;div class=&quot;image_cluster_layout_style_default&quot;&gt;&lt;p style=&quot;padding-bottom: 0pt; padding-top: 0pt; &quot; class=&quot;Caption&quot;&gt;Darstellung von Verteilungen (grafisch)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</iweb:richTitle>
+    </item>
+    <item>
+      <title>Darstellung von Verteilungen (tabellarisch)</title>
+      <link>http://www.interverdikom.de/InterVerdiKom/Screenshots.html#10</link>
+      <guid isPermaLink="false">e934c693-0846-44ca-97b7-ddbff3c245f3</guid>
+      <enclosure url="http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Arrival-02/Arrival-02.jpg" length="95220" type="image/jpeg"/>
+      <iphoto:thumbnail>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Arrival-02/thumb.jpg</iphoto:thumbnail>
+      <iweb:micro>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Arrival-02/micro.jpg</iweb:micro>
+      <iweb:richTitle>&lt;div style=&quot;padding: 0px; &quot; class=&quot;image_cluster_layout_style_default_External_165_32&quot;&gt;&lt;div class=&quot;image_cluster_layout_style_default&quot;&gt;&lt;p style=&quot;padding-bottom: 0pt; padding-top: 0pt; &quot; class=&quot;Caption&quot;&gt;Darstellung von Verteilungen (tabellarisch)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</iweb:richTitle>
+    </item>
+    <item>
+      <title>Intervallquantile der Verteilungen</title>
+      <link>http://www.interverdikom.de/InterVerdiKom/Screenshots.html#11</link>
+      <guid isPermaLink="false">4c74d0e5-ad35-48e7-ad1c-3d389d686a2c</guid>
+      <enclosure url="http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Arrival-03/Arrival-03.jpg" length="59592" type="image/jpeg"/>
+      <iphoto:thumbnail>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Arrival-03/thumb.jpg</iphoto:thumbnail>
+      <iweb:micro>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Arrival-03/micro.jpg</iweb:micro>
+      <iweb:richTitle>&lt;div style=&quot;padding: 0px; &quot; class=&quot;image_cluster_layout_style_default_External_165_32&quot;&gt;&lt;div class=&quot;image_cluster_layout_style_default&quot;&gt;&lt;p style=&quot;padding-bottom: 0pt; padding-top: 0pt; &quot; class=&quot;Caption&quot;&gt;Intervallquantile der Verteilungen&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</iweb:richTitle>
+    </item>
+    <item>
+      <title>Übergangswahrschein-lichkeiten</title>
+      <link>http://www.interverdikom.de/InterVerdiKom/Screenshots.html#12</link>
+      <guid isPermaLink="false">a83ad8e3-cf9d-4fc5-aa6f-59c48f37c066</guid>
+      <enclosure url="http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Arrival-04/Arrival-04.jpg" length="102629" type="image/jpeg"/>
+      <iphoto:thumbnail>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Arrival-04/thumb.jpg</iphoto:thumbnail>
+      <iweb:micro>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Arrival-04/micro.jpg</iweb:micro>
+      <iweb:richTitle>&lt;div style=&quot;padding: 0px; &quot; class=&quot;image_cluster_layout_style_default_External_165_32&quot;&gt;&lt;div class=&quot;image_cluster_layout_style_default&quot;&gt;&lt;p style=&quot;padding-bottom: 0pt; padding-top: 0pt; &quot; class=&quot;Caption&quot;&gt;Übergangswahrschein-lichkeiten&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</iweb:richTitle>
+    </item>
+    <item>
+      <title>Autokorrelationsfunktion</title>
+      <link>http://www.interverdikom.de/InterVerdiKom/Screenshots.html#13</link>
+      <guid isPermaLink="false">d423283e-f10b-4fad-9802-3910ca26f162</guid>
+      <enclosure url="http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Arrival-05/Arrival-05.jpg" length="51626" type="image/jpeg"/>
+      <iphoto:thumbnail>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Arrival-05/thumb.jpg</iphoto:thumbnail>
+      <iweb:micro>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Arrival-05/micro.jpg</iweb:micro>
+      <iweb:richTitle>&lt;div style=&quot;padding: 0px; &quot; class=&quot;image_cluster_layout_style_default_External_165_32&quot;&gt;&lt;div class=&quot;image_cluster_layout_style_default&quot;&gt;&lt;p style=&quot;padding-bottom: 0pt; padding-top: 0pt; &quot; class=&quot;Caption&quot;&gt;Autokorrelationsfunktion&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</iweb:richTitle>
+    </item>
+    <item>
+      <title>Charakteristisches Polynom</title>
+      <link>http://www.interverdikom.de/InterVerdiKom/Screenshots.html#14</link>
+      <guid isPermaLink="false">54fb313c-7487-41c8-952c-e0b442acf0a9</guid>
+      <enclosure url="http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Polynomial-Roots-03/Polynomial-Roots-03.jpg" length="96769" type="image/jpeg"/>
+      <iphoto:thumbnail>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Polynomial-Roots-03/thumb.jpg</iphoto:thumbnail>
+      <iweb:micro>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Polynomial-Roots-03/micro.jpg</iweb:micro>
+      <iweb:richTitle>&lt;div style=&quot;padding: 0px; &quot; class=&quot;image_cluster_layout_style_default_External_165_32&quot;&gt;&lt;div class=&quot;image_cluster_layout_style_default&quot;&gt;&lt;p style=&quot;padding-bottom: 0pt; padding-top: 0pt; &quot; class=&quot;Caption&quot;&gt;Charakteristisches Polynom&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</iweb:richTitle>
+    </item>
+    <item>
+      <title>Nullstellen des char. Polynoms (grafisch)</title>
+      <link>http://www.interverdikom.de/InterVerdiKom/Screenshots.html#15</link>
+      <guid isPermaLink="false">2d2f03be-773d-4f78-94c4-7d7e0492817d</guid>
+      <enclosure url="http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Polynomial-Roots-01/Polynomial-Roots-01.jpg" length="52905" type="image/jpeg"/>
+      <iphoto:thumbnail>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Polynomial-Roots-01/thumb.jpg</iphoto:thumbnail>
+      <iweb:micro>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Polynomial-Roots-01/micro.jpg</iweb:micro>
+      <iweb:richTitle>&lt;div style=&quot;padding: 0px; &quot; class=&quot;image_cluster_layout_style_default_External_165_32&quot;&gt;&lt;div class=&quot;image_cluster_layout_style_default&quot;&gt;&lt;p style=&quot;padding-bottom: 0pt; padding-top: 0pt; &quot; class=&quot;Caption&quot;&gt;Nullstellen des char. Polynoms (grafisch)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</iweb:richTitle>
+    </item>
+    <item>
+      <title>Nullstellen des char. Polynoms (tabellarisch)</title>
+      <link>http://www.interverdikom.de/InterVerdiKom/Screenshots.html#16</link>
+      <guid isPermaLink="false">a2f09032-625d-4d51-8817-3c9973e29e3b</guid>
+      <enclosure url="http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Polynomial-Roots-02/Polynomial-Roots-02.jpg" length="173143" type="image/jpeg"/>
+      <iphoto:thumbnail>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Polynomial-Roots-02/thumb.jpg</iphoto:thumbnail>
+      <iweb:micro>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Polynomial-Roots-02/micro.jpg</iweb:micro>
+      <iweb:richTitle>&lt;div style=&quot;padding: 0px; &quot; class=&quot;image_cluster_layout_style_default_External_165_32&quot;&gt;&lt;div class=&quot;image_cluster_layout_style_default&quot;&gt;&lt;p style=&quot;padding-bottom: 0pt; padding-top: 0pt; &quot; class=&quot;Caption&quot;&gt;Nullstellen des char. Polynoms (tabellarisch)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</iweb:richTitle>
+    </item>
+    <item>
+      <title>Workloadverteilung (grafisch)</title>
+      <link>http://www.interverdikom.de/InterVerdiKom/Screenshots.html#17</link>
+      <guid isPermaLink="false">29c24771-3757-4cbd-be8e-322b934e4c3a</guid>
+      <enclosure url="http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Workload-Dist-01/Workload-Dist-01.jpg" length="45105" type="image/jpeg"/>
+      <iphoto:thumbnail>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Workload-Dist-01/thumb.jpg</iphoto:thumbnail>
+      <iweb:micro>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Workload-Dist-01/micro.jpg</iweb:micro>
+      <iweb:richTitle>&lt;div style=&quot;padding: 0px; &quot; class=&quot;image_cluster_layout_style_default_External_165_32&quot;&gt;&lt;div class=&quot;image_cluster_layout_style_default&quot;&gt;&lt;p style=&quot;padding-bottom: 0pt; padding-top: 0pt; &quot; class=&quot;Caption&quot;&gt;Workloadverteilung (grafisch)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</iweb:richTitle>
+    </item>
+    <item>
+      <title>Workloadverteilung (tabellarisch)</title>
+      <link>http://www.interverdikom.de/InterVerdiKom/Screenshots.html#18</link>
+      <guid isPermaLink="false">6f87e7dc-18af-4d07-9d89-ff9ec138dac6</guid>
+      <enclosure url="http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Workload-Dist-02/Workload-Dist-02.jpg" length="69681" type="image/jpeg"/>
+      <iphoto:thumbnail>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Workload-Dist-02/thumb.jpg</iphoto:thumbnail>
+      <iweb:micro>http://www.interverdikom.de/InterVerdiKom/Screenshots_files/Media/Workload-Dist-02/micro.jpg</iweb:micro>
+      <iweb:richTitle>&lt;div style=&quot;padding: 0px; &quot; class=&quot;image_cluster_layout_style_default_External_165_32&quot;&gt;&lt;div class=&quot;image_cluster_layout_style_default&quot;&gt;&lt;p style=&quot;padding-bottom: 0pt; padding-top: 0pt; &quot; class=&quot;Caption&quot;&gt;Workloadverteilung (tabellarisch)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</iweb:richTitle>
+    </item>
+  </channel>
+</rss>

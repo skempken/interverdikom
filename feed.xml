@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <id>urn:iweb:4E8C6BF8-DAC4-490A-9708-230F0D4260F8</id>
+ <title>Page list Atom feed</title>
+ <updated>2009-12-15T20:38:45+01:00</updated>
+ <link rel="self" href="feed.xml"/>
+ <generator>iWeb</generator>
+ <author>
+  <name>iWeb</name>
+ </author>
+ <entry>
+  <id>urn:iweb:11C28BEF-68D1-423E-ABC8-3B1D721695D1</id>
+  <title>InterVerdiKom</title>
+  <title xmlns="urn:iweb:">InterVerdiKom</title>
+  <in-navbar xmlns="urn:iweb:">11C28BEF-68D1-423E-ABC8-3B1D721695D1</in-navbar>
+  <link rel="alternate" href="InterVerdiKom.html"/>
+  <updated>2009-12-15T20:38:45.001+01:00</updated>
+  <content>InterVerdiKom</content>
+ </entry>
+ <entry>
+  <id>urn:iweb:24DA0902-AC2A-4199-A180-F32AE0B28153</id>
+  <title>Features</title>
+  <title xmlns="urn:iweb:">Features</title>
+  <in-navbar xmlns="urn:iweb:">24DA0902-AC2A-4199-A180-F32AE0B28153</in-navbar>
+  <link rel="alternate" href="Features.html"/>
+  <updated>2009-12-15T20:38:45.002+01:00</updated>
+  <content>Features</content>
+ </entry>
+ <entry>
+  <id>urn:iweb:02BF3163-94D6-4642-8AFA-C3F903BE8D44</id>
+  <title>Screenshots</title>
+  <title xmlns="urn:iweb:">Screenshots</title>
+  <in-navbar xmlns="urn:iweb:">02BF3163-94D6-4642-8AFA-C3F903BE8D44</in-navbar>
+  <link rel="alternate" href="Screenshots.html"/>
+  <updated>2009-12-15T20:38:45.003+01:00</updated>
+  <content>Screenshots</content>
+ </entry>
+ <entry>
+  <id>urn:iweb:54F2B521-9950-45ED-880C-1C2557ABE057</id>
+  <title>Publikationen</title>
+  <title xmlns="urn:iweb:">Publikationen</title>
+  <in-navbar xmlns="urn:iweb:">54F2B521-9950-45ED-880C-1C2557ABE057</in-navbar>
+  <link rel="alternate" href="Publikationen.html"/>
+  <updated>2009-12-15T20:38:45.004+01:00</updated>
+  <content>Publikationen</content>
+ </entry>
+</feed>
