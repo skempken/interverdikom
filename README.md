@@ -5,7 +5,7 @@ What is this?
 -------------
 The stuff PHD thesises are made of. ;-)
 
-See http://skempkn.github.io/interverdikom for details (German).
+See http://skempken.github.io/interverdikom for details (German).
 
 Build Instructions
 ------------------
